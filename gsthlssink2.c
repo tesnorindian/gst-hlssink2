@@ -133,7 +133,7 @@ gst_hls_sink2_class_init (GstHlsSink2Class * klass)
   gst_element_class_set_static_metadata (element_class,
       "HTTP Live Streaming sink", "Sink", "HTTP Live Streaming sink",
       "Alessandro Decina <alessandro.d@gmail.com>, "
-      "Sebastian Dröge <sebastian@centricular.com>,"
+      "Sebastian Dröge <sebastian@centricular.com>, "
       "Vishnu <tesnorindian@gmail.com> ");
 
   element_class->change_state = GST_DEBUG_FUNCPTR (gst_hls_sink2_change_state);
