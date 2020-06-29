@@ -133,7 +133,8 @@ gst_hls_sink2_class_init (GstHlsSink2Class * klass)
   gst_element_class_set_static_metadata (element_class,
       "HTTP Live Streaming sink", "Sink", "HTTP Live Streaming sink",
       "Alessandro Decina <alessandro.d@gmail.com>, "
-      "Sebastian Dröge <sebastian@centricular.com>");
+      "Sebastian Dröge <sebastian@centricular.com>,"
+      "Vishnu <tesnorindian@gmail.com> ");
 
   element_class->change_state = GST_DEBUG_FUNCPTR (gst_hls_sink2_change_state);
   element_class->request_new_pad =
@@ -199,7 +200,7 @@ gst_hls_sink2_init (GstHlsSink2 * sink)
 
   mux = gst_element_factory_make ("mp4mux", NULL);
 
-  g_object_set (mux,"streamable",TRUE,"faststart",TRUE, "presentation-time", TRUE, "fragment-duration",sink->target_duration * GST_MSECOND, "faststart-file", "ProctorPoc1/camera-fast.mp4", NULL);
+  g_object_set (mux,"streamable",TRUE,"faststart",TRUE, "presentation-time", TRUE, "fragment-duration",sink->target_duration * GST_MSECOND, NULL);
 
   g_object_set (sink->splitmuxsink, "location", sink->location, "max-size-time",
       ((GstClockTime) sink->target_duration * GST_SECOND),
