@@ -1,5 +1,4 @@
 # gst-hlssink2 - GStreamer fMP4 HLS Sink
-GStreamer HLS fMP4 sink
 
 GStreamer hlssink2 element that uses mp4mux in splitmuxsink rather than mpegtsmux. 
 
