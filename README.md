@@ -8,7 +8,7 @@ This elemets outputs fMP4s instead of the traditional MPEG-2 TS and only support
 
 This code can be built similar to the other gst-good-plugins either using menson or automake.
 
-The output fMP4s have been tested with the following HLS players
+The output m3u8 with fMP4s have been tested with the following HLS players
 * hls.js
 * Google shaka-player.js
 * Chrome extension Native HLS Playback
